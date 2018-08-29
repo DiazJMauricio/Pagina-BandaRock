@@ -146,7 +146,8 @@
 		.logo_Contenedor{
 			width: 60vh;
 			height: 60vh;
-			border-radius: 50%;
+
+
 
 			position: relative;
 			display: flex;
@@ -348,13 +349,20 @@
 		.precentacion{
 			width: 100%;
 			background-color: black;
-			display: flex;
+			display: inline-block;
 			align-items: center;
 			color: white;
 			margin-bottom: 20px;
 			padding: 15px 0px;
 			transition: 0.3s;
 			position: relative;
+		}
+		.container-precentacion-info{
+			display: flex;
+
+			align-items: center;
+			width: 60%;
+			float: left;
 		}
 		.precentacion:hover{
 			background-color: #101010;
@@ -372,7 +380,8 @@
 		.precentacion .container-fecha{
 			height: 100%; 
 			display: flex; 
-		 
+		 	float: left;
+		 	position: relative;
 			transition: 0.3s;
 		}
 		.precentacion .container-fecha div{
@@ -384,12 +393,18 @@
 
 
 		.precentacion .lugar{
-			font-size: 2em;
+			font-size: 1.8em;
 		}
-		.getTicket{
+		.container-getTicket{
 			position: absolute;
 			right: 20px;
-			height: 40px;
+			top: 0;
+			bottom: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.getTicket{
 			font-family: Oswald;
 			font-size: 1.3em;
 			background-color: black;
@@ -472,13 +487,72 @@
 			.barra{
 				height: 100px;
 			}
+			.container{
+				margin-top:100px; 
+				height: calc(100vh - 100px);
+			}
+
 			.icons-bar{
 				margin-top: 20px;
 				display: block;
 				position: absolute;
 				right: 20px;
 			}
+			.logo_Contenedor{
+				transform: scale(.8);
+			}
+			
 		}
+		@media screen and (max-width: 565px) {
+
+			.content{
+				width: 100%;
+				margin: auto;
+			}
+			.logo_Contenedor{
+				transform: scale(.5);
+			}
+
+			.menu{
+				display: none;
+			}
+			.icons-bar{
+				margin-top:0px; 
+				width: 100px;
+			}
+
+			.container-precentacion-info{
+				width: 100%;
+				position: relative;
+			}
+			.container-getTicket{
+				position: relative;
+				width: 100%;
+				right: 0;
+				padding-top: 10px;
+			}
+			
+			.precentacion .container-fecha div{
+				font-size: 1.2em;
+			}
+			.precentacion .lugar{
+				font-size: 1.3em;
+			}
+
+			.miembros{
+				width: 80%;
+				margin-left: 3%;
+			}
+			.miembro{
+				width:25%;
+			}
+			.miembro .foto{
+				width: 100%;
+				transform: rotateZ(45deg);
+			}
+		}
+
+
 
 		@keyframes lineas{
 			from{ transform: rotate(0deg); }

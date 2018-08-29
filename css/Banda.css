@@ -35,6 +35,18 @@
 			background-image: url('../img/band.jpg');
 			background-position: center;
 		}
+		ul{
+			list-style: none;
+		}
+		a{
+			font-style: none;
+			font-size: 1.1em;
+			text-decoration: none;
+			color: white;
+			transition: .2s;
+			will-change: color, transform;
+			cursor: pointer;
+		}
 		.container{
 			margin-top:50px; 
 			height: calc(100vh - 50px);
@@ -69,9 +81,17 @@
 			align-items: center;
 			justify-content: center;
 		}
+		.navs{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 		.logo-nav-bar{
 			color: var(--logo_c2);
 			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			background-color: white;
 			height: 100%;
 			width: 150px;
@@ -102,9 +122,6 @@
 			float: right;
 			margin-right: 20px;
 		}
-		.menu ul{
-			list-style: none;
-		}
 		.menu li{
 			float: left;
 			margin-left: 30px;
@@ -125,8 +142,6 @@
 			color: var(--hover_white);
 			transform: scale(1.2);
 		}
-
-
 
 		.logo_Contenedor{
 			width: 60vh;
@@ -427,6 +442,42 @@
 			font-family: Mukta;
 			color: var(--gris_M);
 			font-size: .7em;
+		}
+
+		/*********************************************/
+		@media screen and (max-width: 1050px) {
+
+			.iframes{
+				display: block;
+			}
+			iframe{
+				width: 100%;
+			}
+			.youtube{
+				left: 0;
+				right: 0;
+				top: 0;
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			.Spotify iframe{
+				height: 80px;
+			}
+		}
+
+		@media screen and (max-width: 895px) {
+			.biografia-container{
+				column-count: 1;
+			}
+			.barra{
+				height: 100px;
+			}
+			.icons-bar{
+				margin-top: 20px;
+				display: block;
+				position: absolute;
+				right: 20px;
+			}
 		}
 
 		@keyframes lineas{

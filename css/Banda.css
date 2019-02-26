@@ -600,6 +600,29 @@ section {
   }
 }
 
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+  background-color: #131313;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1a1a1a;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgb(100, 14, 79);
+  background-image: -webkit-linear-gradient(
+    top,
+    #c061ff 0%,
+    #f0bff9 50%,
+    #df9fef 60%,
+    #ff3d88 100%
+  );
+}
+
 @keyframes lineas {
   from {
     transform: rotate(0deg);

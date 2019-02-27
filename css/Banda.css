@@ -607,7 +607,7 @@ section {
 }
 
 .scrollbar::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
   background-color: #1a1a1a;
 }
 
@@ -617,8 +617,6 @@ section {
   background-image: -webkit-linear-gradient(
     top,
     #c061ff 0%,
-    #f0bff9 50%,
-    #df9fef 60%,
     #ff3d88 100%
   );
 }
